@@ -1,0 +1,18 @@
+
+
+
+inti the blockchain
+geth --datadir "/home/student/ETH" init "/home/student/ETH/genesis.json"
+
+create new account
+geth --datadir "/home/student/ETH" account new
+
+syncronize
+geth --datadir "/home/student/ETH"  --bootnodes "enode://651acaef26675933dadade4dea470e488a98a2fb46ddbfd8bd9ea041482a64f09fee1b70608641b6b3f79f717892aaa65b66a1881c1e0b2787c56f3c4f6be2b0@160.97.62.236:30301,enode://69085cbe6bfaf4441b4f5185af63bb8bcf54d3ebe54ff33c45b619bf2dc9cde7b9ac59d9fdad4bb14a6e68baf3d30dddc8edf983ea09f26f797635d4789cd6ea@160.97.62.236:30303" --ipcpath "/home/student/ETH/geth.ipc"
+
+start miner
+geth --datadir "/home/student/ETH"  --bootnodes "enode://651acaef26675933dadade4dea470e488a98a2fb46ddbfd8bd9ea041482a64f09fee1b70608641b6b3f79f717892aaa65b66a1881c1e0b2787c56f3c4f6be2b0@160.97.62.236:30301,enode://69085cbe6bfaf4441b4f5185af63bb8bcf54d3ebe54ff33c45b619bf2dc9cde7b9ac59d9fdad4bb14a6e68baf3d30dddc8edf983ea09f26f797635d4789cd6ea@160.97.62.236:30303" --ipcpath "/home/student/ETH/geth.ipc" --mine --minerthreads=1 
+
+
+after syncronization or after start miner,  start the tool ethereum wallet from cmd:
+ethereumwallet --rpc /home/student/ETH/geth.ipc --node-datadir /home/student/ETH
