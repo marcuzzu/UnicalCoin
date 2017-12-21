@@ -1,0 +1,28 @@
+//check the base account of your miner
+eth.coinbase
+
+//check balances of an account (rturn result in WEI)
+eth.getBalance("0x62bac23f6y8id280213ba30c0f56y147a34454ba")
+
+//convert amount of WEI in ETHER
+web3.fromWei(2.1028230698577988e+25, "ether")
+
+//convert amount of ETHER in WEI
+web3.toWei(0.01, "ether")
+
+//combine different command to have the ammount in ether of etherbase...
+web3.fromWei(eth.getBalance(eth.coinbase), "ether")
+
+
+
+//send ether to another account (remember to send ether is mandatory to unlock your account)
+eth.sendTransaction({from:sender, to:receiver, value: amount})
+Example:    eth.sendTransaction({from:eth.coinbase, to:"0xa551ED5C18b542207e3C0E50234d6c589cEAdB60", value: web3.toWei(5.0,"ether")})
+
+
+//unlock your account (after unlock your account is not possibile to lock again so you have to restart geth to unlock account)
+personal.unlockAccount(address, "password")
+
+
+
+
