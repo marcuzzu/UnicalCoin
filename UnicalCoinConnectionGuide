@@ -1,0 +1,15 @@
+inti the blockchain
+geth --datadir "/home/student/UnicalCoin" init "/home/student/UnicalCoin/genesis.json"
+
+create new account
+geth --datadir "/home/student/UnicalCoin" account new
+
+syncronize
+geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://61f8748b232e74b9575c78c7ad98ab6ea14294c8350087444c381e35aa7184b2884c5e478ca7b0c8d9ca85a4e1a6442061fd77f5843d2c9db9126e23d0ae6030@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc"
+
+start miner
+geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://61f8748b232e74b9575c78c7ad98ab6ea14294c8350087444c381e35aa7184b2884c5e478ca7b0c8d9ca85a4e1a6442061fd77f5843d2c9db9126e23d0ae6030@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc" --mine --minerthreads=1 
+
+
+after syncronization or after start miner,  start the tool ethereum wallet from cmd:
+ethereumwallet --rpc /home/student/UnicalCoin/geth.ipc --node-datadir /home/student/UnicalCoin
