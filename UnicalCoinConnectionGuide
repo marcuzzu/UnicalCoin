@@ -5,10 +5,10 @@ create new account
 geth --datadir "/home/student/UnicalCoin" account new
 
 syncronize
-geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://61f8748b232e74b9575c78c7ad98ab6ea14294c8350087444c381e35aa7184b2884c5e478ca7b0c8d9ca85a4e1a6442061fd77f5843d2c9db9126e23d0ae6030@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc"
+geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://98d0eefc97666ddb297f1a6c80f02f7e7c2312b8a24cd045440d18d6277cf0de1be0ca22551bb785ff9549c0a90685c47647f2587e239a76a0f1f8ff9e8e5ed9@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc"
 
 start miner
-geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://61f8748b232e74b9575c78c7ad98ab6ea14294c8350087444c381e35aa7184b2884c5e478ca7b0c8d9ca85a4e1a6442061fd77f5843d2c9db9126e23d0ae6030@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc" --mine --minerthreads=1 
+geth --datadir "/home/student/UnicalCoin"  --bootnodes "enode://98d0eefc97666ddb297f1a6c80f02f7e7c2312b8a24cd045440d18d6277cf0de1be0ca22551bb785ff9549c0a90685c47647f2587e239a76a0f1f8ff9e8e5ed9@160.97.62.236:30302" --ipcpath "/home/student/UnicalCoin/geth.ipc" --mine --minerthreads=1 
 
 
 after syncronization or after start miner,  start the tool ethereum wallet from cmd:
